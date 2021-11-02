@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.19)
+project(ConvolutionalLibrary)
+set(CMAKE_CXX_STANDARD 14)
+add_library(ConvolutionalLibrary 2DLib.cpp)
+#add_executable(2DConvolutionalLibrary ${SOURCE_FILES})
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
