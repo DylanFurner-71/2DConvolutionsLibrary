@@ -1,4 +1,26 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/dylanfurner/Desktop/2DConvolutionsLibrary
+
+-- SOURCE entry point : 
+
+
+-- FINDING SDL2
+-- SDL2_FOUND: TRUE
+-- SDL2_INCLUDE_DIR:/Library/Frameworks/SDL2.framework/Headers
+-- SDL2_LIBRARY: /opt/homebrew/lib/libSDL2.dylib
+
+-- FINDING SDL2_IMAGE
+-- SDL2_IMAGE_FOUND: TRUE
+-- SDL2_IMAGE_INCLUDE_DIR: /opt/homebrew/include/SDL2
+-- SDL2_IMAGE_LIBRARY: /opt/homebrew/lib/libSDL2_image.dylib
+
+-- FINDING SDL2TTF
+-- SDL2TTF_FOUND: TRUE
+-- SDL2TTF_INCLUDE_DIR: /opt/homebrew/include/SDL2
+-- SDL2TTF_LIBRARY: /opt/homebrew/lib/libSDL2_ttf.dylib/opt/homebrew/lib/libSDL2_ttf.dylib-framework Cocoa
+
+-- FINDING SDL2Mixer
+-- SDL2Mixer_FOUND: TRUE
+
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/dylanfurner/Desktop/2DConvolutionsLibrary/build

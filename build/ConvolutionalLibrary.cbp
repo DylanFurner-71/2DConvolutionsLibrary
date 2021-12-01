@@ -5,7 +5,7 @@
 		<Option title="ConvolutionalLibrary"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\opt\;CMake Files\..\..\..\..\opt\homebrew\;CMake Files\..\..\..\..\opt\homebrew\lib\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\opencv4\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\opt\;CMake Files\..\..\..\..\opt\homebrew\;CMake Files\..\..\..\..\opt\homebrew\lib\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\opencv4\;CMake Files\CMAKE\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build"/>
@@ -37,6 +37,54 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="2DConvolutionalLibrary">
+				<Option output="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/bin/2DConvolutionalLibrary" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/opt/homebrew/include/SDL2"/>
+					<Add directory="/opt/homebrew/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/Makefile&quot;  VERBOSE=1 2DConvolutionalLibrary"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2DConvolutionalLibrary/fast">
+				<Option output="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/bin/2DConvolutionalLibrary" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/opt/homebrew/include/SDL2"/>
+					<Add directory="/opt/homebrew/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/Makefile&quot;  VERBOSE=1 2DConvolutionalLibrary/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="ConvolutionalLibrary">
 				<Option output="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/libConvolutionalLibrary.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build"/>
@@ -44,7 +92,9 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/opt/homebrew/Cellar/opencv/4.5.3_2/include/opencv4"/>
+					<Add directory="/opt/homebrew/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/opt/homebrew/include/SDL2"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
@@ -66,7 +116,9 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/opt/homebrew/Cellar/opencv/4.5.3_2/include/opencv4"/>
+					<Add directory="/opt/homebrew/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/opt/homebrew/include/SDL2"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
@@ -83,10 +135,45 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/2DLib.cpp">
+			<Option target="2DConvolutionalLibrary"/>
 			<Option target="ConvolutionalLibrary"/>
 		</Unit>
 		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/2DLib.h">
+			<Option target="2DConvolutionalLibrary"/>
 			<Option target="ConvolutionalLibrary"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/convAbs.cpp">
+			<Option target="2DConvolutionalLibrary"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/convAbs.h">
+			<Option target="2DConvolutionalLibrary"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/main.cpp">
+			<Option target="2DConvolutionalLibrary"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/multi.cpp">
+			<Option target="2DConvolutionalLibrary"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/multi.h">
+			<Option target="2DConvolutionalLibrary"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/output.h">
+			<Option target="2DConvolutionalLibrary"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/shared.cpp">
+			<Option target="2DConvolutionalLibrary"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/shared.h">
+			<Option target="2DConvolutionalLibrary"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/single.cpp">
+			<Option target="2DConvolutionalLibrary"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/single.h">
+			<Option target="2DConvolutionalLibrary"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/thread_data.h">
+			<Option target="2DConvolutionalLibrary"/>
 		</Unit>
 		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
@@ -102,6 +189,18 @@
 		</Unit>
 		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/../../../../opt/homebrew/lib/cmake/opencv4/OpenCVModules.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/CMAKE/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\CMAKE\"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/CMAKE/FindSDL2Mixer.cmake">
+			<Option virtualFolder="CMake Files\CMAKE\"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/CMAKE/FindSDL2TTF.cmake">
+			<Option virtualFolder="CMake Files\CMAKE\"/>
+		</Unit>
+		<Unit filename="/Users/dylanfurner/Desktop/2DConvolutionsLibrary/CMAKE/FindSDL2_IMAGE.cmake">
+			<Option virtualFolder="CMake Files\CMAKE\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

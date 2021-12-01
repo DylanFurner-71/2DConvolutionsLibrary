@@ -10,7 +10,9 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/opt/homebrew/Cellar/opencv/4.5.3_2/include/opencv4"
+  "/opt/homebrew/Cellar/opencv/4.5.3_3/include/opencv4"
+  "/Library/Frameworks/SDL2.framework/Headers"
+  "/opt/homebrew/include/SDL2"
   )
 
 # Targets to which this target links.
