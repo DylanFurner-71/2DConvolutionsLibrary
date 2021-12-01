@@ -72,6 +72,7 @@ CMAKE_BINARY_DIR = /Users/dylanfurner/Desktop/2DConvolutionsLibrary/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/2DConvolutionalLibrary.dir/all
 all: CMakeFiles/ConvolutionalLibrary.dir/all
 
 .PHONY : all
@@ -82,9 +83,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/2DConvolutionalLibrary.dir/clean
 clean: CMakeFiles/ConvolutionalLibrary.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/2DConvolutionalLibrary.dir
+
+# All Build rule for target.
+CMakeFiles/2DConvolutionalLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2DConvolutionalLibrary.dir/build.make CMakeFiles/2DConvolutionalLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2DConvolutionalLibrary.dir/build.make CMakeFiles/2DConvolutionalLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target 2DConvolutionalLibrary"
+.PHONY : CMakeFiles/2DConvolutionalLibrary.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/2DConvolutionalLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/2DConvolutionalLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/CMakeFiles 0
+.PHONY : CMakeFiles/2DConvolutionalLibrary.dir/rule
+
+# Convenience name for target.
+2DConvolutionalLibrary: CMakeFiles/2DConvolutionalLibrary.dir/rule
+
+.PHONY : 2DConvolutionalLibrary
+
+# clean rule for target.
+CMakeFiles/2DConvolutionalLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2DConvolutionalLibrary.dir/build.make CMakeFiles/2DConvolutionalLibrary.dir/clean
+.PHONY : CMakeFiles/2DConvolutionalLibrary.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ConvolutionalLibrary.dir
@@ -93,7 +122,7 @@ clean: CMakeFiles/ConvolutionalLibrary.dir/clean
 CMakeFiles/ConvolutionalLibrary.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvolutionalLibrary.dir/build.make CMakeFiles/ConvolutionalLibrary.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvolutionalLibrary.dir/build.make CMakeFiles/ConvolutionalLibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/CMakeFiles --progress-num=1,2 "Built target ConvolutionalLibrary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build/CMakeFiles --progress-num=8,9 "Built target ConvolutionalLibrary"
 .PHONY : CMakeFiles/ConvolutionalLibrary.dir/all
 
 # Build rule for subdir invocation for target.

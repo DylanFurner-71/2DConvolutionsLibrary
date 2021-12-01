@@ -1,0 +1,39 @@
+# Target labels
+ Main
+ opencv_highgui
+ Module
+# Source files and their labels
+/Users/dylanfurner/Desktop/2DConvolutionsLibrary/opencv/modules/highgui/include/opencv2/highgui.hpp
+ Main
+ opencv_highgui
+ Module
+/Users/dylanfurner/Desktop/2DConvolutionsLibrary/opencv/modules/highgui/include/opencv2/highgui/highgui.hpp
+ Main
+ opencv_highgui
+ Module
+/Users/dylanfurner/Desktop/2DConvolutionsLibrary/opencv/modules/highgui/include/opencv2/highgui/highgui_c.h
+ Main
+ opencv_highgui
+ Module
+/Users/dylanfurner/Desktop/2DConvolutionsLibrary/opencv/modules/highgui/src/backend.cpp
+ Main
+ opencv_highgui
+ Module
+/Users/dylanfurner/Desktop/2DConvolutionsLibrary/opencv/modules/highgui/src/window.cpp
+ Main
+ opencv_highgui
+ Module
+/Users/dylanfurner/Desktop/2DConvolutionsLibrary/opencv/modules/highgui/src/roiSelector.cpp
+ Main
+ opencv_highgui
+ Module
+/Users/dylanfurner/Desktop/2DConvolutionsLibrary/opencv/modules/highgui/src/window_cocoa.mm
+ Main
+ opencv_highgui
+ Module
+/Users/dylanfurner/Desktop/2DConvolutionsLibrary/opencv/modules/highgui/src/precomp.hpp
+ Main
+ opencv_highgui
+ Module
+/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build_opencv/cvconfig.h
+/Users/dylanfurner/Desktop/2DConvolutionsLibrary/build_opencv/opencv2/opencv_modules.hpp

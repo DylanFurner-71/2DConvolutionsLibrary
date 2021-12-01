@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc lib2DConvolutionalLibrary.a CMakeFiles/2DConvolutionalLibrary.dir/2DLib.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib lib2DConvolutionalLibrary.a

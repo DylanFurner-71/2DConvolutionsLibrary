@@ -1,7 +1,7 @@
 #include "2DLib.h"
-//need to create a file upload function now
-int main() {
-    singleThread::takePicture();
-    singleThread::liveFromCamera();
-    return 0;
+int main(int argc, char**argv) {
+    libr::init();
+//    singleThread::liveFromCamera();
+    multiThread::liveFromCameraM();
+//    multiThread::times();
 }
